@@ -28,7 +28,7 @@ contract Crud {
     uint i = find(id);
     delete users[i];
   }
-
+  //use for all three function to iterate and search the element and perform the operation.
   function find(uint id) view internal returns(uint) {
     for(uint i = 0; i < users.length; i++) {
       if(users[i].id == id) {
